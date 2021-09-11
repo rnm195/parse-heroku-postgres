@@ -7,6 +7,6 @@ module.exports = exports = {
   PORT: PORT,
   SERVER_URL: process.env.SERVER_URL || `http://localhost:${PORT}`,
   PSERVER_URL: process.env.PSERVER_URL || `http://localhost:${PORT}`,
-  DATABASE_URL: process.env.DATABASE_URL || 'postgres://parse:parse@localhost:5432/parse',
+  DATABASE_URL: process.env.DATABASE_URL + '?sslmode=require' || 'postgres://parse:parse@localhost:5432/parse',
   MONGODB_URI: process.env.MONGODB_URI || 'mongodb://localhost:27017/parse'
 };
