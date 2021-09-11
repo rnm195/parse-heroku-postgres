@@ -14,12 +14,6 @@ const parsePgServer = new ParseServer({
   serverURL: `${PARSE_CONFIG.SERVER_URL}/pg`,
   masterKey: PARSE_CONFIG.MASTER_KEY
 });
-const parseMongoServer = new ParseServer({
-  databaseURI: PARSE_CONFIG.MONGODB_URI,
-  appId: PARSE_CONFIG.APP_ID,
-  serverURL: `${PARSE_CONFIG.SERVER_URL}/mongo`,
-  masterKey: PARSE_CONFIG.MASTER_KEY
-});
 
 const parseDashboard = new ParseDashboard({
   apps: [
@@ -29,12 +23,6 @@ const parseDashboard = new ParseDashboard({
       masterKey: PARSE_CONFIG.MASTER_KEY,
       appName: PARSE_CONFIG.APP_NAME + ' PostgreSQL'
     },
-    {
-      serverURL: `${PARSE_CONFIG.PSERVER_URL}/mongo`,
-      appId: PARSE_CONFIG.APP_ID,
-      masterKey: PARSE_CONFIG.MASTER_KEY,
-      appName: PARSE_CONFIG.APP_NAME + ' MongoDB'
-    }
   ],
   users: [
     {user: 'parse', pass: '$2a$12$XHzIm4HV5WYgVJn9SVSwu.C0mPRrU3reqlyBZ8iE6lRisaV/.xdoW'}
@@ -44,7 +32,6 @@ const parseDashboard = new ParseDashboard({
 });
 
 app.use('/pg', parsePgServer);
-app.use('/mongo', parseMongoServer);
 app.use('/dashboard', parseDashboard);
 
 module.exports = exports = app;
