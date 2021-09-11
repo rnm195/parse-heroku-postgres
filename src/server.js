@@ -37,7 +37,7 @@ const parseDashboard = new ParseDashboard({
     }
   ],
   users: [
-    {user: 'parse', pass: '$2y$10$k00HQT0vCcwQIpi12FYVcuMi.vd.puICn0CjL31s3wooWqFVvtz12'}
+    {user: 'parse', pass: '$2a$12$XHzIm4HV5WYgVJn9SVSwu.C0mPRrU3reqlyBZ8iE6lRisaV/.xdoW'}
   ],
   useEncryptedPasswords: true,
   trustProxy: 1
