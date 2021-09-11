@@ -14,7 +14,7 @@ const parsePgServer = new ParseServer({
   serverURL: `${PARSE_CONFIG.SERVER_URL}/pg`,
   masterKey: PARSE_CONFIG.MASTER_KEY
 });
-console.log(PARSE_CONFIG.DATABASE_URL);
+
 const parseDashboard = new ParseDashboard({
   apps: [
     {
