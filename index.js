@@ -9,7 +9,6 @@ app.listen(PARSE_CONFIG.PORT, () => {
     `
     Parse server and dashboard running - 
     Postgres-based Parse API : http://localhost:${PARSE_CONFIG.PORT}/pg
-    MongoDB-based Parse API  : http://localhost:${PARSE_CONFIG.PORT}/mongo
     Dashboard                : http://localhost:${PARSE_CONFIG.PORT}/dashboard
     
      `);
