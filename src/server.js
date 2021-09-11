@@ -24,13 +24,13 @@ const parseMongoServer = new ParseServer({
 const parseDashboard = new ParseDashboard({
   apps: [
     {
-      serverURL: `${PARSE_CONFIG.SERVER_URL}/pg`,
+      serverURL: `${PARSE_CONFIG.PSERVER_URL}/pg`,
       appId: PARSE_CONFIG.APP_ID,
       masterKey: PARSE_CONFIG.MASTER_KEY,
       appName: PARSE_CONFIG.APP_NAME + ' PostgreSQL'
     },
     {
-      serverURL: `${PARSE_CONFIG.SERVER_URL}/mongo`,
+      serverURL: `${PARSE_CONFIG.PSERVER_URL}/mongo`,
       appId: PARSE_CONFIG.APP_ID,
       masterKey: PARSE_CONFIG.MASTER_KEY,
       appName: PARSE_CONFIG.APP_NAME + ' MongoDB'
