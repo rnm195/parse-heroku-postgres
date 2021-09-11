@@ -12,4 +12,5 @@ app.listen(PARSE_CONFIG.PORT, () => {
     Dashboard                : http://localhost:${PARSE_CONFIG.PORT}/dashboard
     
      `);
+  console.info(`DB URL : ${PARSE_CONFIG.DATABASE_URL}`);
 });
