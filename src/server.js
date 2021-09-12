@@ -23,6 +23,12 @@ const parseDashboard = new ParseDashboard({
       masterKey: PARSE_CONFIG.MASTER_KEY,
       appName: PARSE_CONFIG.APP_NAME + ' PostgreSQL'
     },
+    {
+      serverURL: 'https://pse-robin.herokuapp.com/parse',
+      appId: PARSE_CONFIG.APP_ID,
+      masterKey: PARSE_CONFIG.MASTER_KEY,
+      appName: PARSE_CONFIG.APP_NAME + ' PSE pg'
+    }
   ],
   users: [
     {user: 'parse', pass: '$2a$12$XHzIm4HV5WYgVJn9SVSwu.C0mPRrU3reqlyBZ8iE6lRisaV/.xdoW'}
